@@ -17,6 +17,8 @@ import com.pb.javacourses._7.autoclose.FakeResource;
 import com.pb.javacourses._7.autoclose.NotCloseableResource;
  
 /**
+ * in git
+ * 
  * links:
  * - http://www.oracle.com/technetwork/java/javase/jdk7-relnotes-429209.html
  * - http://www.oracle.com/technetwork/java/javase/jdk7-relnotes-418459.html
@@ -24,7 +26,7 @@ import com.pb.javacourses._7.autoclose.NotCloseableResource;
  * - https://weblogs.java.net/blog/otaviojava/archive/2011/08/11/welcome-java-7-part-1
  * 
  * @author pavel
- *
+ * 
  */
 
 public class SyntaxSugar {
