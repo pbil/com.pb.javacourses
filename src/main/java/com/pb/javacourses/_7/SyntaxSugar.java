@@ -15,7 +15,7 @@ import com.pb.javacourses._7.autoclose.AutoCloseableResource;
 import com.pb.javacourses._7.autoclose.CloseableResource;
 import com.pb.javacourses._7.autoclose.FakeResource;
 import com.pb.javacourses._7.autoclose.NotCloseableResource;
-
+ 
 /**
  * links:
  * - http://www.oracle.com/technetwork/java/javase/jdk7-relnotes-429209.html
