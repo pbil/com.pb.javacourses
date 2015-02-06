@@ -17,8 +17,6 @@ import com.pb.javacourses._7.autoclose.FakeResource;
 import com.pb.javacourses._7.autoclose.NotCloseableResource;
  
 /**
- * in git
- * 
  * links:
  * - http://www.oracle.com/technetwork/java/javase/jdk7-relnotes-429209.html
  * - http://www.oracle.com/technetwork/java/javase/jdk7-relnotes-418459.html
@@ -132,6 +130,11 @@ public class SyntaxSugar {
 		s.genericReplayType();
 		s.autoCloseableInWork();
 		s.autoCloseableInConnection();
+		
+		switch("") {
+		case ":":;
+		
+		}
 	}
 
 	

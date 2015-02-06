@@ -165,8 +165,7 @@ public class SimpleApp
           * the system property derby.system.home points to, or the current
           * directory (user.dir) if derby.system.home is not set.
           */
-         conn = DriverManager.getConnection(protocol + dbName
-                 + ";create=true", props);
+         conn = DriverManager.getConnection(protocol + dbName + ";create=true", props);
 
          System.out.println("Connected to and created database " + dbName);
 
@@ -193,8 +192,7 @@ public class SimpleApp
           * improve security (because of Java type checking).
           */
          // parameter 1 is num (int), parameter 2 is addr (varchar)
-         psInsert = conn.prepareStatement(
-                     "insert into location values (?, ?)");
+         psInsert = conn.prepareStatement("insert into location values (?, ?)");
          statements.add(psInsert);
 
          psInsert.setInt(1, 1956);
@@ -210,8 +208,7 @@ public class SimpleApp
          // Let's update some rows as well...
 
          // parameter 1 and 3 are num (int), parameter 2 is addr (varchar)
-         psUpdate = conn.prepareStatement(
-                     "update location set num=?, addr=? where num=?");
+         psUpdate = conn.prepareStatement("update location set num=?, addr=? where num=?");
          statements.add(psUpdate);
 
          psUpdate.setInt(1, 180);
@@ -230,8 +227,7 @@ public class SimpleApp
          /*
             We select the rows and verify the results.
           */
-         rs = s.executeQuery(
-                 "SELECT num, addr FROM location ORDER BY num");
+         rs = s.executeQuery("SELECT num, addr FROM location ORDER BY num");
 
          /* we expect the first returned column to be an integer (num),
           * and second to be a String (addr). Rows are sorted by street
