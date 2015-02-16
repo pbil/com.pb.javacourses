@@ -101,8 +101,6 @@ public class Isql {
 		new Isql().run();
 	}
 
-
-	
 	private static void close(ResultSet rs, Statement st, Connection c) {
 		if(rs != null) {
 			try {
@@ -128,7 +126,7 @@ public class Isql {
 	}
 
 	private static Connection getConnection() throws SQLException {
-		Connection connection = DriverManager.getConnection("jdbc:derby:db/db_jic;create=true");
+		Connection connection = DriverManager.getConnection("jdbc:derby:db/db;create=true");
 		System.out.println("is auto commit: " + connection.getAutoCommit());
 		System.out.println("is closed: " + connection.isClosed());
 		return connection;
